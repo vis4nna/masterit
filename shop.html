@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style2.css">
+    <title>Product</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="navigation">
+            <div class="name">
+                <h1>MasterIT</h1>
+            </div>
+            
+            <div class="menu">
+                <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-menu">
+                    <i class="fa-solid fa-bars" aria-hidden="true"></i>
+                </button>
+                <ul id="primary-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <a href="shop.html"><i class="fa-solid fa-bag-shopping"></i></a>
+                </ul>
+
+                
+            </div>
+        </div>
+
+       <div class="cart-container">
+
+        <table class="cart-table">
+
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th class="center">Quantity</th>
+                    <th class="right">Subtotal</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>
+                        <div class="product-info">
+                            <img src="img/product-1.jpg" alt="">
+
+                            <div>
+                                <p>Red Printed T-Shirt</p>
+                                <span>Price $500.00</span>
+                                <br>
+                                <a href="">Remove</a>
+                            </div>
+                        </div>
+                    </td>
+
+                    <td class="center">
+                        <input type="number" value="1" min="1">
+                    </td>
+
+                    <td class="right">$500.00</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="product-info">
+                            <img src="img/product-2.jpg" alt="">
+
+                            <div>
+                                <p>HRX Shoes</p>
+                                <span>Price $1500.00</span>
+                                <br>
+                                <a href="">Remove</a>
+                            </div>
+                        </div>
+                    </td>
+
+                    <td class="center">
+                        <input type="number" value="1" min="1">
+                    </td>
+
+                    <td class="right">$1500.00</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="product-info">
+                            <img src="img/product-2.jpg" alt="">
+
+                            <div>
+                                <p>Reebok Tracksuit</p>
+                                <span>Price $1500.00</span>
+                                <br>
+                                <a href="">Remove</a>
+                            </div>
+                        </div>
+                    </td>
+
+                    <td class="center">
+                        <input type="number" value="1" min="1">
+                    </td>
+
+                    <td class="right">$1500.00</td>
+                </tr>
+
+                <tr>
+                    <td colspan="2"></td>
+
+                    <td>
+                        <table class="total-table">
+
+                            <tr>
+                                <td>Subtotal</td>
+                                <td class="right">$3500.00</td>
+                            </tr>
+
+                            <tr>
+                                <td>Tax</td>
+                                <td class="right">$15.00</td>
+                            </tr>
+
+                            <tr>
+                                <td>Total</td>
+                                <td class="right">$3515.00</td>
+                            </tr>
+
+                        </table>
+                    </td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+       
+    <div class="footer">
+            <p>Copyright 2023 - MasterIT store</p>
+        </div>
+    </div>
+    
+    <script>
+        const menu = document.querySelector(".menu");
+        const menuToggle = document.querySelector(".menu-toggle");
+
+        menuToggle.addEventListener("click", () => {
+            const isOpen = menu.classList.toggle("is-open");
+            menuToggle.setAttribute("aria-expanded", String(isOpen));
+        });
+    </script>
+</body>
+</html>

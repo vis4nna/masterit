@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:wght@100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style2.css">
+
+    <title>About</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="navigation">
+            <div class="name">
+                <h1>MasterIT</h1>
+            </div>
+            
+            <div class="menu">
+                <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-menu">
+                    <i class="fa-solid fa-bars" aria-hidden="true"></i>
+                </button>
+                <ul id="primary-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <a href="shop.html"><i class="fa-solid fa-bag-shopping"></i></a>
+                </ul>
+
+                
+            </div>
+        </div>
+
+    <div class="about">
+
+        <div class="about-title">
+            <h1>About MasterIT Store</h1>
+        </div>
+
+        <div class="info">
+
+            <p class="introduction">
+                Everything you wanted to know about your fave
+                fashion brand. And then some.
+            </p>
+
+            <p class="context">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Delectus doloremque quaerat quae sit inventore temporibus
+                cum similique iusto, mollitia sapiente ut dicta libero
+                maiores sed quas eos id in pariatur voluptatibus veritatis
+                molestiae aut odio! Qui ea dolorum corrupti illo quo
+                similique animi aut dolores ipsa, explicabo consectetur.
+
+                Sed laboriosam alias, voluptates commodi quibusdam, ab,
+                accusantium harum numquam quam deleniti maiores nam eum!
+                Consequatur ducimus accusamus quod incidunt soluta corrupti
+                nobis dignissimos ratione ullam ad impedit perferendis
+                iusto, iste officiis.
+
+                Obcaecati magnam consequatur aliquid nostrum, excepturi
+                consequuntur ducimus ad? Obcaecati delectus ex voluptates
+                nostrum quasi minus doloremque esse omnis quisquam
+                cupiditate animi consectetur quam rem praesentium iure
+                pariatur fugit ratione, a, facilis quibusdam maiores odit
+                molestiae.
+
+                Corrupti, quasi assumenda nulla necessitatibus enim ipsam
+                nemo repellat modi beatae maxime dolores saepe delectus
+                eius exercitationem. Dolores cum beatae, excepturi
+                nostrum soluta ea sit aut minus assumenda eligendi!
+            </p>
+
+        </div>
+
+    </div>
+
+        <script>
+        const menu = document.querySelector(".menu");
+        const menuToggle = document.querySelector(".menu-toggle");
+
+        menuToggle.addEventListener("click", () => {
+            const isOpen = menu.classList.toggle("is-open");
+            menuToggle.setAttribute("aria-expanded", String(isOpen));
+        });
+    </script>
+
+</body>
+</html>
